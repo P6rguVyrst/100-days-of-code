@@ -1,0 +1,9 @@
+# An application to scrape 'home directory' for video files and get to know more about them (IMDB links, trailers, ratings - rottentomatoes, imdb) and serve the data on a web page.
+
+
+Architecture.
+    # Filesystem scraper - fs_poller.py
+    # A service with a queue and parallelism to listen for data input.
+    # uwsgi server (flask/pyramid/django) to serve gathered data
+        - The service should be universal - and depending on keywords decide what to do with the data.
+        
