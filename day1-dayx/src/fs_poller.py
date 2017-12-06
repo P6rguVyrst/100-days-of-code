@@ -5,6 +5,7 @@ from os import walk
 from pprint import pprint as pp
 import re
 import click
+import json
 
 # TODO:
 #   Filter unique titles
@@ -58,8 +59,7 @@ def main(home):
     fsd = FSDiscovery()
     videos = fsd.discover_rawdata(filetypes, home)
     series = fsd.filter_series(videos)
-    pp(series)
-
+    print(json.dumps(dict(data=series)))
 
 if __name__ == '__main__':
     main()
