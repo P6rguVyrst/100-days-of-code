@@ -1,5 +1,7 @@
 *.log
 *.pyc
+*.wav
+*.mp3
 *.cache/
 help/
 
