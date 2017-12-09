@@ -18,5 +18,9 @@
 
 **Thougts**: I know I can do it with Ansible, but I needed it for a purpose that ansible is not suited for.
 
+### Day 4: December 9, 2017 - Working Flask API
+**Today's Progress**: Working on Flask API and added some off the shelf code for testing my own applications.
+
+**Thougts**: Noting interesting going on here...
 
 
