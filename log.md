@@ -23,4 +23,7 @@
 
 **Thougts**: Noting interesting going on here...
 
+### Day 5: December 10, 2017 - Coding music
+**Today's Progress**: Wrote code to explore sounds in sonic-pi powered by python-sonic.
+**Thougts**: Yesterday I talked about an idea I had once with a friend and he reccommended me an awesome tool called sonic-pi. Although it seems to be written in Ruby, there's a Python interface in pypi called python-sonic. Check it out, it's awesome!
 
