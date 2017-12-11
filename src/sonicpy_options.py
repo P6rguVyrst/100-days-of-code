@@ -178,15 +178,15 @@ looping = s.looping()
 tabla = s.tabla()
 vinyl = s.vinyl()
 
-#for item in vinyl:
-#    sample(item)
-#    sleep(1)
+for item in vinyl:
+    sample(item, attack=1.5, amp=3)
+    sleep(1)
 
 
 method_list = [func for func in dir(s) if callable(getattr(s, func)) and not func.startswith("__")]
 print(method_list)
 
-
+"""
 for samples in method_list:
     func = '{}.{}'.format(s, samples)
     print(func)
@@ -197,7 +197,7 @@ for samples in method_list:
         #play(item)
         sample(item)
         sleep(1)
-
+"""
 
 """
 synth(name,

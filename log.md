@@ -25,5 +25,12 @@
 
 ### Day 5: December 10, 2017 - Coding music
 **Today's Progress**: Wrote code to explore sounds in sonic-pi powered by python-sonic.
+
 **Thougts**: Yesterday I talked about an idea I had once with a friend and he reccommended me an awesome tool called sonic-pi. Although it seems to be written in Ruby, there's a Python interface in pypi called python-sonic. Check it out, it's awesome!
+
+### Day 6: December 11, 2017 - Flask
+**Today's Progress**: Fixed stuff.
+
+**Thougts**: Nothing to see here, move along. Not 100% sure where I'm going with this, but I seem to be moving along just nicely. Speed is another factor...
+
 
