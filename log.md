@@ -33,4 +33,10 @@
 
 **Thougts**: Nothing to see here, move along. Not 100% sure where I'm going with this, but I seem to be moving along just nicely. Speed is another factor...
 
+### Day 7: December 12, 2017 - ???
+**Today's Progress**: Working on filtering out unique titles.
+
+**Thougts**: Need to filter out unique media files. Get their imdb code (or any other unique id), and look for more interesting stuff about the unique title - to eventually, present the titles, enriched with metadata, through Flask API. 
+
+
 
