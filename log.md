@@ -38,5 +38,9 @@
 
 **Thougts**: Need to filter out unique media files. Get their imdb code (or any other unique id), and look for more interesting stuff about the unique title - to eventually, present the titles, enriched with metadata, through Flask API. 
 
+### Day 8: December 13, 2017 - Regex magic
+**Today's Progress**: REGEX magic - Working on filtering out unique titles - pretty solid work so far (good enough, but not perfect)
+
+**Thougts**: Packaged some code into easily deployable application at work today, unfortunatelly that doesn't count for this challenge. Worked on filtering results to filter unique titles. Unique titles must be searched for additional data: trailer, imdb etc... The data is then passed to Flask API that will display the enriched information.
 
 
