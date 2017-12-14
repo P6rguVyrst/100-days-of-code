@@ -43,4 +43,8 @@
 
 **Thougts**: Packaged some code into easily deployable application at work today, unfortunatelly that doesn't count for this challenge. Worked on filtering results to filter unique titles. Unique titles must be searched for additional data: trailer, imdb etc... The data is then passed to Flask API that will display the enriched information.
 
+### Day 9: December 14, 2017 - Thursdays's the hardest
+**Today's Progress**: I would if I could, but I don't think I should.
+
+**Thougts**: Seriouslly... Not today.
 
