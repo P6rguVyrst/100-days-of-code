@@ -1,9 +1,10 @@
 help/
 node_modules/
-bower_compponents/
+bower_components/
 *.cache/
 *.log
 *.pyc
+package-lock.json
 *.wav
 *.mp3
 *.keys
