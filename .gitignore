@@ -1,7 +1,9 @@
+help/
+node_modules/
+bower_compponents/
+*.cache/
 *.log
 *.pyc
 *.wav
 *.mp3
-*.cache/
-help/
 *.keys

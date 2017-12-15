@@ -91,6 +91,13 @@ def listener():
     else:
         return jsonify({'message': "POST me a message."}), 200
 
+@app.route('/', methods=['GET'])
+def hello():
+    return render_template('index.html')
+
 
 if __name__ == '__main__':
-    app.run()
+    app.run(
+        debug=True,
+        host='0.0.0.0',
+    )

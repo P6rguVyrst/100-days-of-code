@@ -48,3 +48,8 @@
 
 **Thougts**: Seriouslly... Not today.
 
+### Day 10: December 15, 2017 - Working my way up to frontend stuff... 
+**Today's Progress**: Worked through Flask+React frontend development tutorial @ Realpython_.
+.. _Realpython: https://realpython.com/blog/python/the-ultimate-flask-front-end/
+
+**Thougts**: Now I have a basic template to display results from fs_discovery.py
