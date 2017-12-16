@@ -17,9 +17,9 @@ class Definitions(object):
 
     def movies(self, filename):
         # Can only be identified by metadata (imdb, google etc...)
-        pattern = '(.*\d{4}).*'
+        pattern = '(.*)( \d{4}?)|$'
         movies = re.compile(pattern)
-        year_match = re.findall(movies, filename.upper())
+        year_match = re.search(movies, filename.upper())
         if year_match:
             # FIXIT: Series pattern "S0630" also matched
             if not self.series(filename):
@@ -90,6 +90,7 @@ def unique_titles(videos, datatype):
         'series': define.series,
         'movies': define.movies,
     }
+
     data = {'titles': []}
     for title in videos['data']:
         for f in title.get('folder', {}).get('files'):
@@ -111,8 +112,31 @@ def send_data(data):
     uri = 'http://127.0.0.1:5000/notify'
     extra = {'msg_type': 'media'}
     d = {**data, **extra}
-    r = requests.post(uri, data=json.dumps(d))
-    print(r)
+    #r = requests.post(uri, data=json.dumps(d))
+    print(json.dumps(d))
+
+
+def get_year():
+    return 2018
+
+def get_imdb():
+    return 'https://www.imdb.com'
+
+def get_trailer():
+    return 'trailer'
+
+def alpha(media_list):
+    data = []
+    for title in media_list:
+        item = dict(
+            title = title,
+            year = get_year(),
+            imdb = get_imdb(),
+            trailer = get_trailer(),
+        )
+        data.append(item)
+
+    return data
 
 
 @click.command()
@@ -127,10 +151,14 @@ def main(home):
     movies = unique_titles(videos, 'movies')
     series = unique_titles(videos, 'series')
 
+    uniq_movies = list(set(movies['titles']))
+    uniq_series = list(set(series['titles']))
+
     payload = {
-        'movies': list(set(movies['titles'])),
-        'series': list(set(series['titles'])),
+        'movies': alpha(uniq_movies),
+        'series': alpha(uniq_series),
     }
+
     send_data(payload)
 
 

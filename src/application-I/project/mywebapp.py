@@ -16,6 +16,7 @@ from flask import (
     render_template,
     Markup,
 )
+from json2html import *
 from validators import (
     validate_json,
     validate_schema,
@@ -93,7 +94,11 @@ def listener():
 
 @app.route('/', methods=['GET'])
 def hello():
-    return render_template('index.html')
+    with open('project/test_data.json', 'r') as f:
+        data = f.read()
+    table = json2html.convert(data)
+    return table
+    #return render_template('index.html')
 
 
 if __name__ == '__main__':

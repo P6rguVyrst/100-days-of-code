@@ -49,7 +49,13 @@
 **Thougts**: Seriouslly... Not today.
 
 ### Day 10: December 15, 2017 - Working my way up to frontend stuff... 
-**Today's Progress**: Worked through Flask+React frontend development tutorial @ Realpython_.
-.. _Realpython: https://realpython.com/blog/python/the-ultimate-flask-front-end/
+**Today's Progress**: Worked through Flask+React frontend development tutorial [Realpython](https://realpython.com/blog/python/the-ultimate-flask-front-end/)
 
 **Thougts**: Now I have a basic template to display results from fs_discovery.py
+
+### Day 11: December 16, 2017 - Know your tools 
+**Today's Progress**:  Worked my way through dozens of cookiecutter [templates](https://github.com/audreyr/cookiecutter#python), testing flask, pyramid and django. Later on worked on project repository a little.
+
+**Thougts**: There's a plethora of awesome python and to save your nerve and time it pays to get to know what is out there... It's amazing how easily you can get up and running with cookiecutter templates - it takes the hassle away from packaging your code.
+
+
