@@ -58,4 +58,8 @@
 
 **Thougts**: There's a plethora of awesome python and to save your nerve and time it pays to get to know what is out there... It's amazing how easily you can get up and running with cookiecutter templates - it takes the hassle away from packaging your code.
 
+### Day 12: December 17, 2017 - python-sonic
+**Today's Progress**:  Started work on my fork of [python-sonic](https://github.com/P6rguVyrst/python-sonic/tree/restructuring). Structuring code and making smaller logical pieces. Learning unit testing.
+
+**Thougts**: First challenge I had with the library was that it was difficult to explore sounds (listening to them while actually seeing what's playing). The get_sounds() function at samples package returns a dictionary which allows to play the values while actually print out the keys.
 

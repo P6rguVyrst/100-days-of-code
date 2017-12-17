@@ -1,0 +1,3 @@
+aplay -l
+jackd -R -d alsa -d hw:1
+sonic-pi
