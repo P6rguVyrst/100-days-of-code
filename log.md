@@ -63,3 +63,10 @@
 
 **Thougts**: First challenge I had with the library was that it was difficult to explore sounds (listening to them while actually seeing what's playing). The get_sounds() function at samples package returns a dictionary which allows to play the values while actually print out the keys.
 
+### Day 13: December 18, 2017 - IMDB
+**Today's Progress**: Trying to enforce myself to do TDD. Started working on a script to fetch IMDB data. 
+
+**Thougts**: Still need to get access to AWS IMDB bucket.
+
+
+
