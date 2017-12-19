@@ -68,5 +68,11 @@
 
 **Thougts**: Still need to get access to AWS IMDB bucket.
 
+### Day 14: December 19, 2017 - data cleanup...
+**Today's Progress**: Cleaning data is pain. I feel for all the data science people out there. Got the regexes to the point they work. But the code is a mess and needs cleanup.
+
+**Thougts**: S3 "imdb-datasets" access denied - really? 
+
+
 
 

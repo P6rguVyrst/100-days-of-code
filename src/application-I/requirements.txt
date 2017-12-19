@@ -2,3 +2,4 @@ flask
 click
 requests
 logmatic-python
+imdbpie

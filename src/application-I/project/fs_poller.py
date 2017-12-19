@@ -17,21 +17,28 @@ class Definitions(object):
 
     def movies(self, filename):
         # Can only be identified by metadata (imdb, google etc...)
-        pattern = '(.*)( \d{4}?)|$'
+        pattern = '(.*?)( \d{4}?)|$'
+        #pattern = '(.*?)\d{4}|$'
         movies = re.compile(pattern)
         year_match = re.search(movies, filename.upper())
-        if year_match:
-            # FIXIT: Series pattern "S0630" also matched
-            if not self.series(filename):
-                # FIXIT
-                return year_match[0]
+
+        if not self.series(filename):
+            if year_match:
+                match = year_match[0]
+                if match:
+                    x = str(year_match[0]).split(' ')
+                    data = dict(
+                        title = ' '.join(x[:-1]),
+                        year = int(x[-1:][0]),
+                    )
+                    return data
 
     def series(self, filename):
         pattern = '(.*)S\d{2}E\d{2}.*'
         series = re.compile(pattern)
         episode_match = re.findall(series, filename.upper())
         if episode_match:
-            return episode_match[0]
+            return dict(title=episode_match[0])
 
 
 class FSDiscovery(object):
@@ -70,22 +77,9 @@ class WebScraper(object):
 
 
 def unique_titles(videos, datatype):
-    # Google search for first title + imdb. imdb hit. - imdb id?
-    # search for movies: https://www.omdbapi.com/ - search by imdbid?
-    # need to filter down titles better.
-    """
-    OMDB Data sample:
 
-    {"Title":"Guardians of the Galaxy Vol. 2","Year":"2017","Rated":"PG-13","Released":"05 May 2017","Runtime":"136 min","Genre":"Action, Adventure, Sci-Fi","Director":"James Gunn","Writer":"James Gunn, Dan Abnett (based on the Marvel comics by), Andy Lanning (based on the Marvel comics by), Steve Englehart (Star-lord created by), Steve Gan (Star-lord created by), Jim Starlin (Gamora and Drax created by), Stan Lee (Groot created by), Larry Lieber (Groot created by), Jack Kirby (Groot created by), Bill Mantlo (Rocket Raccoon created by), Keith Giffen (Rocket Raccoon created by), Steve Gerber (Howard the Duck created by), Val Mayerik (Howard the Duck created by)","Actors":"Chris Pratt, Zoe Saldana, Dave Bautista, Vin Diesel","Plot":"The Guardians must fight to keep their newfound family together as they unravel the mystery of Peter Quill's true parentage.","Language":"English","Country":"USA, New Zealand, Canada","Awards":"6 wins & 13 nominations.","Poster":"https://images-na.ssl-images-amazon.com/images/M/MV5BMTg2MzI1MTg3OF5BMl5BanBnXkFtZTgwNTU3NDA2MTI@._V1_SX300.jpg","Ratings":[{"Source":"Internet Movie Database","Value":"7.8/10"},{"Source":"Rotten Tomatoes","Value":"83%"},{"Source":"Metacritic","Value":"67/100"}],"Metascore":"67","imdbRating":"7.8","imdbVotes":"301,863","imdbID":"tt3896198","Type":"movie","DVD":"22 Aug 2017","BoxOffice":"$389,804,217","Production":"Walt Disney Pictures","Website":"https://marvel.com/guardians","Response":"True"}
-
-    """
-    # REGEXES TO MATCH: year, season
-    # Match everything up to
     define = Definitions()
 
-    #define.series()
-
-    #print(m)
     options = {
         'series': define.series,
         'movies': define.movies,
@@ -102,18 +96,16 @@ def unique_titles(videos, datatype):
             if m:
                 data['titles'].append(str(m))
 
-    #print(set(data['titles']))
     return data
 
 
 def send_data(data):
-    # pretty good filter, but not perfect
     pp(data)
     uri = 'http://127.0.0.1:5000/notify'
     extra = {'msg_type': 'media'}
     d = {**data, **extra}
     #r = requests.post(uri, data=json.dumps(d))
-    print(json.dumps(d))
+    #print(json.dumps(d))
 
 
 def get_year():
@@ -128,13 +120,13 @@ def get_trailer():
 def alpha(media_list):
     data = []
     for title in media_list:
-        item = dict(
-            title = title,
-            year = get_year(),
-            imdb = get_imdb(),
-            trailer = get_trailer(),
-        )
-        data.append(item)
+        #item = dict(
+        #    title = title,
+        #    #year = get_year(),
+        #    #imdb = get_imdb(),
+        #    #trailer = get_trailer(),
+        #)
+        data.append(title)
 
     return data
 
