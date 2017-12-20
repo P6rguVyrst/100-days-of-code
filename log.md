@@ -73,6 +73,46 @@
 
 **Thougts**: S3 "imdb-datasets" access denied - really? 
 
+### Day 15: December 20, 2017 - Little boxes...
+**Today's Progress**: Hacked some of the backend pieces more or less together.
 
+**Thougts**: Next year at [POFF Movie festival](https://poff.ee/eng/index) I'm definetly going to do my *TO WATCH* research using this tool I'm building right now. It's terribly annoying going through frontend trying to figure out what to whatch..
 
+**Result**:
+> {'media': [{'movies': [{'imdb': [],
+>                        'title': 'CAPTAIN AMERICA CIVIL WAR',
+>                        'year': 2016},
+>                       {'imdb': [{'creators': [],
+>                                  'genres': ['Comedy', 'Drama'],
+>                                  'imdb_id': 'tt5962210',
+>                                  'rating': 6.7,
+>                                  'runtime': 98.0,
+>                                  'tagline': "She'll Follow You",
+>                                  'title': 'Ingrid Goes West',
+>                                  'type': 'feature',
+>                                  'uri': 'http://www.imdb.com/title/tt5962210/',
+>                                  'votes': 10172,
+>                                  'year': '2017'}],
+>                        'title': 'INGRID GOES WEST',
+>                        'year': 2017},
+>                       {'imdb': [{'creators': [],
+>                                  'genres': ['Crime', 'Drama'],
+>                                  'imdb_id': 'tt0087843',
+>                                  'rating': 8.4,
+>                                  'runtime': 139.0,
+>                                  'tagline': 'Crime, passion and lust for '
+>                                             "power - Sergio Leone's explosive "
+>                                             'saga of gangland America. '
+>                                             '[Australia Theatrical]',
+>                                  'title': 'Once Upon a Time in America',
+>                                  'type': 'feature',
+>                                  'uri': 'http://www.imdb.com/title/tt0087843/',
+>                                  'votes': 247454,
+>                                  'year': '1984'}],
+>                        'title': 'ONCE UPON A TIME IN AMERICA',
+>                        'year': 1984}]},
+>           {'series': [{'imdb': [], 'title': 'House of Cards', 'year': None},
+>                       {'imdb': [], 'title': 'South Park', 'year': None},
+>                       {'imdb': [], 'title': 'Archer', 'year': None},
+>                       {'imdb': [], 'title': 'Rick and morty', 'year': None}]}]}
 
