@@ -116,3 +116,13 @@
 >                       {'imdb': [], 'title': 'Archer', 'year': None},
 >                       {'imdb': [], 'title': 'Rick and morty', 'year': None}]}]}
 
+### Day 16: December 21, 2017 - Skipped a beat
+**Today's Progress**: Christmas party after work. Skipped a day.
+
+### Day 17: December 22, 2017 - filesystem directory monitoring
+**Today's Progress**: Made use of watchdog and wrote a script to monitor a directory and log events to /dev/jsonlog or redis queue.
+
+**Thoughts**: Had hard time picking up application-I and worked on something else to ease my mind.
+
+
+
