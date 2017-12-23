@@ -124,5 +124,9 @@
 
 **Thoughts**: Had hard time picking up application-I and worked on something else to ease my mind.
 
+### Day 18: December 23, 2017 - IP packet inspection
+**Today's Progress**: Started building IP packet inspection tool for myself to monitor my network traffic.
+
+**Thoughts**: Since I started building tools yestarday, I thought it would be a good idea to build something I've wanted to explore before in the past. Didn't build anything myself yet but found incredibly useful code that I am extremely grateful for. Next step will be to structure the packet data, direct it to Elastic and build tool to query to query/monitor Elasticsearch indices and set up notifications for interesting traffic. It's awesome to explore networking fundamentals again. 
 
 

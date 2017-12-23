@@ -5,7 +5,6 @@ import requests
 from pprint import pprint as pp
 from imdbpie import Imdb
 
-
 class ImdbFilter(object):
 
     def __init__(self):
@@ -41,6 +40,8 @@ class ImdbFilter(object):
                     matches.append(item)
         return matches
 
+p = ImdbFilter()
+
 
 def extract_year(title):
     pattern = '(.*?)( \d{4}?)'
@@ -73,7 +74,7 @@ def structure_data(data):
     return result
 
 
-p = ImdbFilter()
+
 def write_to_file(filename, data):
     with open(filename, 'w') as f:
         f.write(data)
@@ -83,7 +84,7 @@ def explore():
 
     titles = {
         'movies': {
-            'CAPTAIN AMERICA CIVIL WAR 2016',
+            #'CAPTAIN AMERICA CIVIL WAR 2016',
             'INGRID GOES WEST 2017',
             'ONCE UPON A TIME IN AMERICA 1984',
         },
