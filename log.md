@@ -129,4 +129,7 @@
 
 **Thoughts**: Since I started building tools yestarday, I thought it would be a good idea to build something I've wanted to explore before in the past. Didn't build anything myself yet but found incredibly useful code that I am extremely grateful for. Next step will be to structure the packet data, direct it to Elastic and build tool to query to query/monitor Elasticsearch indices and set up notifications for interesting traffic. It's awesome to explore networking fundamentals again. 
 
+### Day 19: December 24, 2017 - IP packet inspection - structuring
+**Today's Progress**: Worked on the packet inspection code and found out I could have done it easier with scapy. On to exploring scapy!
+
 

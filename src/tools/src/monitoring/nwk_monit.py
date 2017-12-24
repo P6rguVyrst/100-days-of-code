@@ -1,127 +1,168 @@
 import socket
-import sys
-from struct import *
-"""
-http://www.binarytides.com/python-packet-sniffer-code-linux/
-
-"""
-
-def eth_addr (a) :
-    b = "%.2x:%.2x:%.2x:%.2x:%.2x:%.2x" % (ord(a[0]) , ord(a[1]) , ord(a[2]), ord(a[3]), ord(a[4]) , ord(a[5]))
-    return b
-
-try:
-    s = socket.socket(
-        socket.AF_PACKET,
-        socket.SOCK_RAW,
-        socket.ntohs(0x0003),
-
-    )
-except socket.error as err:
-    print(err)
-    sys.exit()
+from struct import unpack
+from binascii import unhexlify, hexlify
 
 
+class HeaderFactory(object):
 
-while True:
-    packet = s.recvfrom(65565)
-    packet = packet[0]
+    def eth_header(self, data):
+        """Return ethernet header"""
+        storeobj = data
+        storeobj = unpack('!6s6sH', storeobj)
 
-    eth_length = 14
-    eth_header = packet[:eth_length]
-    eth = unpack('!6s6sH', eth_header)
-    eth_protocol = socket.ntohs(eth[2])
+        dest_mac = hexlify(storeobj[0])
+        src_mac = hexlify(storeobj[1])
+        eth_protocol = socket.ntohs(storeobj[2])
 
-    src_mac = eth_addr(packet[6:12])
-    dst_mac = eth_addr(packet[0:6])
-    protocol = str(eth_protocol)
-    print(eth_protocol, protocol, src_mac, dst_mac)
+        header = dict(
+            source = dict(
+                mac = src_mac,
+            ),
+            destination = dict(
+                mac = dest_mac,
 
-    # IP Packets
-    if eth_protocol == 8:
-        ip_header = packet[eth_length:20+eth_length]
-        iph = unpack('!BBHHHBBH4s4s', ip_header)
+            ),
+            protocol = eth_protocol
+        )
+        return header
 
-        version_ihl = iph[0]
-        version = version_ihl >> 4
-        ihl = version_ihl & 0xF
-
+    def ip_header_length(self, ip_header_version):
+        version = ip_header_version >> 4 # what to do with version?
+        ihl = ip_header_version & 0xF
         iph_length = ihl * 4
+        return iph_length
+    def tcp_header_length(self, offset):
+        return offset >> 4
 
-        ttl = iph[5]
-        protocol = iph[6]
+    def ip_header(self, data):
+        """Return IP header"""
+        iph = unpack('!BBHHHBBH4s4s', data)
 
-        s_addr = socket.inet_ntoa(iph[8]);
-        d_addr = socket.inet_ntoa(iph[9]);
+        header = dict(
+            version = iph[0],
+            tos = iph[1],
+            total_length = iph[2],
+            id = iph[3],
+            frag_offset = iph[4],
+            ttl = iph[5],
+            protocol = iph[6],
+            header_checksum = iph[7],
+            src_addr = socket.inet_ntoa(iph[8]),
+            dest_addr = socket.inet_ntoa(iph[9]),
+        )
+        header['length'] = self.ip_header_length(header['version'])
+        return header
 
-        print(version, ihl, ttl, protocol, s_addr, d_addr)
-        # TCP
-        if protocol == 6:
-            t = iph_length + eth_length
-            tcp_header = packet[t:t+20]
+    def icmp_header(self, data):
+        """Return ICMP header"""
+        icmph = unpack('!BBH', data)
+        icmp_type = icmph[0]
+        code = icmph[1]
+        checksum = icmph[2]
 
-            tcph = unpack('!HHLLBBHHH', tcp_header)
+        header = dict(
+            icmp_type = icmp_type,
+            code = code,
+            checksum = checksum,
+        )
+        return header
 
-            source_port = tcph[0]
-            dest_port = tcph[1]
-            sequence = tcph[2]
-            acknowledgement = tcph[3]
-            doff_reserved = tcph[4]
-            tcph_length = doff_reserved >> 4
+    def tcp_header(self, data):
+        """Return TCP header"""
+        tcph = unpack('!HHLLBBHHH', data)
+        header = dict(
+            src_port = tcph[0],
+            dest_port = tcph[1],
+            sequence = tcph[2],
+            acknowledgement = tcph[3],
+            offset_reserved = tcph[4],
+            tcp_flag = tcph[5],
+            window = tcph[6],
+            checksum = tcph[7],
+            urgent_pointer = tcph[8],
+        )
+        header['length'] = self.ip_header_length(header['offset_reserved'])
+        return header
 
-            print(
-                source_port, dest_port, sequence,
-                acknowledgement, tcph_length
+    def udp_header(self, data):
+        udph = unpack('!HHHH', data)
+        header = dict(
+            source_port = udph[0],
+            dest_port = udph[1],
+            length = udph[2],
+            checksum = udph[3],
+        )
+        return header
+
+
+class NetworkTraffic(object):
+
+    def __init__(self):
+        self.sock = self._connect()
+        self.unpack = HeaderFactory()
+
+    def _connect(self):
+        try:
+            sock = socket.socket(
+                socket.AF_PACKET,
+                socket.SOCK_RAW,
+                socket.ntohs(0x0003),
             )
+            return sock
+        except socket.error as err:
+            print(err)
+            sys.exit(1)
 
-            h_size = eth_length + iph_length + tcph_length * 4
-            data_size = len(packet) - h_size
+    def capture(self):
+        while True:
+            packet = self.sock.recvfrom(65565)
+            self.analyze(packet)
 
-            data = packet[h_size:]
+    def extract_data(self, packet, header_size):
+        data_size = len(packet) - header_size
+        data = packet[header_size:]
+        return data
 
-            print(data)
-
-        # ICMP
-        elif protocol == 1:
-            u = iph_length + eth_length
-            icmph_length = 4
-            icmp_header = packet[u:u+4]
-
-            icmph = unpack('!BBH', icmp_header)
-
-            icmp_type = icmph[0]
-            code = icmph[1]
-            checksum = icmph[2]
-
-            print(icmp_type, code, checksum)
-
-            h_size = eth_length + iph_length + icmph_length
-            data_size = len(packet) - h_size
-
-            data = packet[h_size:]
-
-            print(data)
-
-        # UDP
-        elif protocol == 17:
-            u = iph_length + eth_length
-            udph_length = 8
-            udp_header = packet[u:u+8]
-            udph = unpack('!HHHH', udp_header)
-
-            source_port = udph[0]
-            dest_port = udph[1]
-            length = udph[2]
-            checksum = udph[3]
-
-            print(source_port, dest_port, length, checksum)
-
-            h_size = eth_length + iph_length + udph_length
-            data_size = len(packet) - h_size
-
-            data = packet[h_size:]
-
-            print(data)
+    def analyze(self, packet):
+        packet = packet[0]
+        eth_length = 14
+        eth_header = packet[:eth_length]
+        eth = self.unpack.eth_header(eth_header)
+        if eth['protocol'] == 8:
+            ip_header = packet[eth_length: eth_length+20]
+            ip_data = self.unpack.ip_header(ip_header)
+            protocol = ip_data['protocol']
+            ip_packet_len = eth_length + ip_data['length']
+            if protocol == 6:
+                tcp = ip_packet_len
+                header_len = 20
+                tcp_header = packet[tcp: tcp+header_len]
+                header = self.unpack.tcp_header(tcp_header)
+                h_size = ip_packet_len + header['length'] * 4
+                data = self.extract_data(packet, h_size)
+            elif protocol == 1:
+                icmp = ip_packet_len
+                header_len = 4
+                icmp_header = packet[icmp: icmp+header_len]
+                header = self.unpack.icmp_header(icmp_header)
+                h_size = ip_packet_len + header_len
+                data = self.extract_data(packet, h_size)
+            elif protocol == 17:
+                udp = ip_packet_len
+                header_len = 8
+                udp_header = packet[udp: udp+header_len]
+                header = self.unpack.udp_header(udp_header)
+                h_size = ip_packet_len + header_len
+                data = self.extract_data(packet, h_size)
+            #print(type(data), data)
+            #print(f'{header}')
         else:
-            print('Protocol other than TCP/UDP/ICMP')
+            # packet type 1544, 56710
+            print(f'Not IP traffic: {eth}')
 
+
+NWK = NetworkTraffic()
+
+
+if __name__ == '__main__':
+    NWK.capture()
