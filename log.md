@@ -132,4 +132,10 @@
 ### Day 19: December 24, 2017 - IP packet inspection - structuring
 **Today's Progress**: Worked on the packet inspection code and found out I could have done it easier with scapy. On to exploring scapy!
 
+### Day 20: December 25, 2017 - scrapy
+**Today's Progress**: Explored scrapy. [DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-crawl-a-web-page-with-scrapy-and-python-3) had a nice tutorial for getting started with scrapy. Built a script to get all the legos from a given year, just followed the tutorial and completed the extra challenges at the end. Using scrapy also fetched all movie titles from POFF website. Now would be a good time to enrich them with extra data, but have to use tools that do not rely on imdb
+unoficial API.
+
+**Thoughts**: So it wasn't my code.. imdb-pie "search_for_title" seems to be non-functional. Should not rely on fragile external dependencies that are not built on official APIs. If I am to continue first idea, I should make it with different tools such as beautifulsoup/selenium/scrapy. 
+
 
