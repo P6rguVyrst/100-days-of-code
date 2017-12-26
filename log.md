@@ -138,4 +138,15 @@ unoficial API.
 
 **Thoughts**: So it wasn't my code.. imdb-pie "search_for_title" seems to be non-functional. Should not rely on fragile external dependencies that are not built on official APIs. If I am to continue first idea, I should make it with different tools such as beautifulsoup/selenium/scrapy. 
 
+### Day 21: December 26, 2017 - scrapy v2
+**Today's Progress**: So I made a script to gather all minecraft servers just to add them to hosts file and redirect all minecraft server requests to /dev/null - or 0.0.0.0 to be exact.. There still seems to be some kind of endless loop problem but I thnk it won't be dfficult to work that out. Otherwse all the awesome info is being gathered. 
+
+**Thoughts**: It started in the morning when my nephew asked for my computer to play Minecraft. Yeah, I'm partly responsible for that craze, but it was painful to see them playing mind-numbing games.. That gave me an idea to make a Minecraft firewall. I'm sure that's going to protect my mothers computer from those meddling kids :P If they're smart enough they'll get to play, until I get to firewall config. :)
+
+**Data Sample**:
+{'id': '88.150.171.23', 'href': 'http://minecraft-server-list.com/server/390744/', 'tags': ['Survival', 'Factions', 'McMMO', 'PVP', 'RP', 'Economy'], 'version': '1.8.8', 'ip': '88.150.171.23', 'players': '/ 50'}
+{'id': 'avatarcentral2.mcserver.ws', 'href': 'http://minecraft-server-list.com/server/403444/', 'tags': ['Survival', 'PVP', 'Economy'], 'version': '1.8.8', 'ip': 'avatarcentral2.mcserver.ws', 'players': '/ 50'}
+{'id': '172.106.203.31:28601', 'href': 'http://minecraft-server-list.com/server/405119/', 'tags': ['Survival', 'Factions', 'Economy'], 'version': '1.12.2', 'ip': '172.106.203.31:28601', 'players': '/ 50'}
+
+
 
