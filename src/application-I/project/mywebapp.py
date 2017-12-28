@@ -92,6 +92,17 @@ def listener():
     else:
         return jsonify({'message': "POST me a message."}), 200
 
+@app.route('/poff', methods=['GET'])
+def poff():
+    with open('project/poff.json', 'r') as f:
+        data = f.read()
+    return data
+    #table = json2html.convert(data)
+    #return table
+    #return render_template('index.html')
+
+
+
 @app.route('/', methods=['GET'])
 def hello():
     #with open('project/test_data.json', 'r') as f:

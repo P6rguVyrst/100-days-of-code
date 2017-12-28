@@ -148,5 +148,19 @@ unoficial API.
 {'id': 'avatarcentral2.mcserver.ws', 'href': 'http://minecraft-server-list.com/server/403444/', 'tags': ['Survival', 'PVP', 'Economy'], 'version': '1.8.8', 'ip': 'avatarcentral2.mcserver.ws', 'players': '/ 50'}
 {'id': '172.106.203.31:28601', 'href': 'http://minecraft-server-list.com/server/405119/', 'tags': ['Survival', 'Factions', 'Economy'], 'version': '1.12.2', 'ip': '172.106.203.31:28601', 'players': '/ 50'}
 
+### Day 22: December 27, 2017 - 
+**Today's Progress**: Skipped a day.
+
+**Thoughts**: I feel like I'm lacking in JavaScript skills to get awesome stuff done.
+
+### Day 23: December 28, 2017 - Celery
+**Today's Progress**: Got started with celery examples. Wanted to get more done but had to troubleshoot celery. It wasn't working out of the box in virtualenv because I had one instance of it installed system wide. Wasted too much time debugging the issue... 
+
+**Thoughts**: Pay attention to error messages!!! Would have been clear instantly that I wasn't using the celery defined in virtualenv...
+Traceback (most recent call last):
+  File "/usr/local/bin/celery", line 7, in <module>
+      from celery.__main__ import main
+      ImportError: No module named celery.__main__
+
 
 
