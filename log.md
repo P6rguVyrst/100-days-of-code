@@ -162,5 +162,7 @@ Traceback (most recent call last):
       from celery.__main__ import main
       ImportError: No module named celery.__main__
 
+### Day 24: December 29, 2017 - Celery vol II
+**Today's Progress**: I was wondering why tasks were not going to my queues, but after following [Digitalocean](https://www.digitalocean.com/community/tutorials/how-to-use-celery-with-rabbitmq-to-queue-tasks-on-an-ubuntu-vps) tutorial I noticed that I wasn't pushing jobs to Rabbit queue. I finaly got the jobs going to queues but they stayed there. Need to see how I can consume them properly using celery. Tried out flower API - looks promising for monitoring purposes.
 
-
+**Thoughts**: While reaing [StackOverflow](https://stackoverflow.com/questions/9077687/why-use-celery-instead-of-rabbitmq) I came to think that celery is not something for me. What I like about the whole thing is that it has a nice API to interact with and when using flower you could potentially monitor whole message flow pretty neatly.  
