@@ -52,8 +52,8 @@ class BrickSetSpider(scrapy.Spider):
                         _players = self.normalize_whitespace(_players)
                     server['players'] = _players
 
-                print(server)
-                #yield server
+                #print(server)
+                yield server
 
         NEXT_PAGE_SELECTOR = '//div[@class="paginate paginate-dark pagination-wrapper"]/ul/li/a/@href'
         next_page = response.xpath(NEXT_PAGE_SELECTOR).extract()[-2]

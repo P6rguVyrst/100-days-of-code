@@ -1,6 +1,10 @@
 from celery import Celery
 
 app = Celery('tasks', backend='amqp', broker='amqp://')
+app.conf.update(
+    result_expires=60,
+)
+
 
 @app.task(ignore_result=True)
 def print_hello():

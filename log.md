@@ -166,3 +166,18 @@ Traceback (most recent call last):
 **Today's Progress**: I was wondering why tasks were not going to my queues, but after following [Digitalocean](https://www.digitalocean.com/community/tutorials/how-to-use-celery-with-rabbitmq-to-queue-tasks-on-an-ubuntu-vps) tutorial I noticed that I wasn't pushing jobs to Rabbit queue. I finaly got the jobs going to queues but they stayed there. Need to see how I can consume them properly using celery. Tried out flower API - looks promising for monitoring purposes.
 
 **Thoughts**: While reaing [StackOverflow](https://stackoverflow.com/questions/9077687/why-use-celery-instead-of-rabbitmq) I came to think that celery is not something for me. What I like about the whole thing is that it has a nice API to interact with and when using flower you could potentially monitor whole message flow pretty neatly.  
+
+
+### Day 25: December 30, 2017 - lost a day again.
+**Today's Progress**: days += 1
+
+**Thoughts**: End of the year and christmas time is terrible time to find time for coding. I seem to be skipping days too regularly...
+
+### Day 25: December 31, 2017 - Sonic pi
+**Today's Progress**: Actually had to start a stopwatch to get my hour of code today. Thought I'd spend it creatively - continued with sonic-pi and understood how terrible it is to create something in it. No wonder programs such as Ableton exist. While it's a cool concept the creative process flow would probavlly be better in a program such as Ableton. She potential show element with sonic-pi is still awesome though.
+
+**Thoughts**: When living gets in the way. Testing out sonic-pi is easier in python interactive shell.
+
+
+
+

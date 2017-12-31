@@ -1,5 +1,5 @@
 from psonic import *
-
+from multiprocessing import Process
 # FIND AND REPLACE
 # :%s/ =.*//g
 # :%s#\n#,
@@ -178,9 +178,64 @@ looping = s.looping()
 tabla = s.tabla()
 vinyl = s.vinyl()
 
-for item in vinyl:
-    sample(item, attack=1.5, amp=3)
-    sleep(1)
+
+
+#sample(bass_drums[9], amp=3)
+
+def intro():
+    i = 16
+    while i > 0:
+        i -= 1
+        print(i)
+        sample(BD_TEK, amp=3)
+        sleep(0.4)
+
+    return True
+
+def base_beat():
+    while True:
+        sample(BD_TEK, amp=3)
+        sleep(0.4)
+        #sample(DRUM_CYMBAL_CLOSED)
+        #sleep(0.25)
+        #sample(bass_drums[9], amp=3)
+        #sleep(0.2)
+        #sample(bass_drums[11], amp=3)
+
+def beat_2():
+    while True:
+        sample(DRUM_HEAVY_KICK)
+        sleep(0.2)
+        sample(DRUM_CYMBAL_CLOSED)
+        sleep(0.2)
+        sample(DRUM_HEAVY_KICK)
+        sleep(0.2)
+
+
+def control():
+
+    intro()
+
+    base = Process(target=base_beat)
+    base.start()
+
+    alpha = Process(target=beat_2)
+    alpha.start()
+
+
+
+control()
+#p.join()
+#p.terminate() # to stop playing beat
+
+
+
+#i= 0
+#for item in drums:
+#    i+=1
+#    x = sample(item, amp=3)
+#    print(i)
+#    sleep(1)
 
 
 method_list = [func for func in dir(s) if callable(getattr(s, func)) and not func.startswith("__")]
