@@ -173,11 +173,21 @@ Traceback (most recent call last):
 
 **Thoughts**: End of the year and christmas time is terrible time to find time for coding. I seem to be skipping days too regularly...
 
-### Day 25: December 31, 2017 - Sonic pi
+### Day 26: December 31, 2017 - Sonic pi
 **Today's Progress**: Actually had to start a stopwatch to get my hour of code today. Thought I'd spend it creatively - continued with sonic-pi and understood how terrible it is to create something in it. No wonder programs such as Ableton exist. While it's a cool concept the creative process flow would probavlly be better in a program such as Ableton. She potential show element with sonic-pi is still awesome though.
 
 **Thoughts**: When living gets in the way. Testing out sonic-pi is easier in python interactive shell.
 
+### Day 27: January 1, 2018 - lost aday and
+**Today's Progress**: days += 1
+
+**Thoughts**: Not that I want to skip days, but lost my backpack on the new year's eve. Since I hoped I'd get it back I avoided setting up a new development environment from scratch. Luckily I got my computer back! Great start for a new year. Karma sure seems to work. Even if I had had permanently lost my backpack, it still would've been the best new year's eve I've had! :)
+
+### Day 28: January 2, 2018 - back in black
+
+**Today's Progress**: Tried scraping skyscanner.net with requests, but the site seems to be blocking robots. That sucks! 
+
+**Thoughts**: So, since I made a new friend who lives in England I thought I'd make something to monitor plane tickets with. Scyscanner only seems to provide their API to legal entities, so I'm on my own to scrape the web. Considering that the site blocks robots, it's something I should not do as part of #100DaysOfCode. Another project idea eliminated -.-
 
 
 
