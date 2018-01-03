@@ -190,4 +190,10 @@ Traceback (most recent call last):
 **Thoughts**: So, since I made a new friend who lives in England I thought I'd make something to monitor plane tickets with. Scyscanner only seems to provide their API to legal entities, so I'm on my own to scrape the web. Considering that the site blocks robots, it's something I should not do as part of #100DaysOfCode. Another project idea eliminated -.-
 
 
+### Day 29: January 3, 2018 - Estonia
+
+**Today's Progress**: Started building a spider to monitor open data that our government [publishes](http://www.rik.ee/et/avaandmed) publishes.
+
+**Thoughts**: Wish I had a bigger project to work on. Maybe I should continue with my branch of python-sonic. Last time I ran into some architectural problems. I need to think it through and find a solid design pattern to work with.
+
 
