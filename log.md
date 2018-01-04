@@ -197,3 +197,10 @@ Traceback (most recent call last):
 **Thoughts**: Wish I had a bigger project to work on. Maybe I should continue with my branch of python-sonic. Last time I ran into some architectural problems. I need to think it through and find a solid design pattern to work with.
 
 
+### Day 30: January 4, 2018 - codeclub
+
+**Today's Progress**: Started doing codeclub again. Maybe it would be a good idea to keep those exericises for backup. For times when I'm in dire need of coding hours but lack ideas to work on with. Since I'm ashamed how little I got done today, I can't count it as an hour of code. 
+
+**Thoughts**: Looked at python-sonic and decied it takes more time than I have today to get started with that. At daytime I stashed 7 articles I need to read about packaging Python software. I thought I had everything figured out, until I wanted to run tests for a coe that's meant to run in virtualenv and CI server lacks all the dependencies.
+
+

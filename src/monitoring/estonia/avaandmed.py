@@ -32,6 +32,7 @@ class CrawlEstonia(scrapy.Spider):
         for brickset in response.xpath(SET_SELECTOR):
             SEL = 'td ::text'
             item = brickset.css(SEL).extract()[-1]
+            print(f'{BASE_URI}/{item}')
             # EACH ITEM CAN BE MONITORED. SEE URI's above.
             # SELECT ONLY tr where <td style="font-weight:bold"> - to avoid subcategories and duplicate entries.
 
