@@ -203,4 +203,10 @@ Traceback (most recent call last):
 
 **Thoughts**: Looked at python-sonic and decied it takes more time than I have today to get started with that. At daytime I stashed 7 articles I need to read about packaging Python software. I thought I had everything figured out, until I wanted to run tests for a coe that's meant to run in virtualenv and CI server lacks all the dependencies.
 
+### Day 31: January 5, 2018 - codeclub II 
+
+**Today's Progress**: Codeclub stuff.
+
+**Thoughts**: This week I kinda ended up in Python Packaging Hell... Luckily I found a nice example from [github](https://github.com/pypa/sample-namespace-packages) of how to package different things in one namespace. Regarding the challenge, just worked on some codeclub stuff.
+
 

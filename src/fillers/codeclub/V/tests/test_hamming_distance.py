@@ -6,7 +6,7 @@ length is the sum of the difference in bits of each character.
 
 def test_get_distance():
 
-    get_distance('asd', 'app')
+    #get_distance('asd', 'app')
 
     #print(x)
     print(0)
