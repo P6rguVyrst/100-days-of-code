@@ -215,4 +215,9 @@ Traceback (most recent call last):
 
 **Thoughts**: Although lists are considered to be the most dangerous data types in Python, because they can be so easily be misused, in my case, today, they were performing faster than appending instructions to a string. The goal was to have a STRING of instructions. Generating it from a list is MUCH faster than dynamically appending to a string. There probably are better solutions for solving this, but today this was good emough.
 
+### Day 33: January 7, 2018 - writing tests
+
+**Today's Progress**: testing code
+
+**Thoughts**: Trying to get myself in the habbit of writing the test before functionality.
 

@@ -6,6 +6,7 @@ class ATM(object):
                  fifties=100, hundreds=50,
                  thundreds=25, fhundreds=10):
 
+        # assert int for bills
         bills = self.catch_counterfit({
             5: fives,
             10: tens,
@@ -18,7 +19,7 @@ class ATM(object):
         self.b = bills
         self.balance = sum([k*v for k,v in bills.items()])
 
-
+    #TODO: simplify, make more easily testable
     def catch_counterfit(self, bills):
         for k, v in bills.items():
             try:
@@ -37,9 +38,11 @@ class ATM(object):
     def bills(self): pass
 
     def whidraw(self, money):
-        if not isinstance(money, int):
-            pass
+        assert isinstance(money, int)
+        payout = {'bills': money}
+        return payout
 
-        return
+    def deposit(self, bills):
+        assert isinstance(bills, dict)
+        self.catch_counterfit(bills)
 
-    def deposit(self): pass
