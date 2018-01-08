@@ -221,3 +221,9 @@ Traceback (most recent call last):
 
 **Thoughts**: Trying to get myself in the habbit of writing the test before functionality.
 
+### Day 34: January 8, 2018 - atm
+
+**Today's Progress**: worked on atm
+
+**Thoughts**: Thought it would be easier to build the return bill logic, but at the end of a workday it's not that easy :(
+
