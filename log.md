@@ -238,5 +238,11 @@ Traceback (most recent call last):
 
 **Thoughts**: Packaged watchdog feature into a console script.
 
+### Day 36: January 10, 2018
+
+**Today's Progress**: RLE
+
+**Thoughts**: Well, managed to get run-length encoding and decoding functions pretty compact. My tests are passing, but the codeclub tests fail, and I have no idea why.
+
 
 

@@ -1,23 +1,11 @@
+from itertools import groupby
+import re
 
 def encode(string):
-    length = len(string)
-    i = 0
-    while i < length:
+    return ''.join(
+        [''.join([str(len(list(group))), name]) for name, group in groupby(string)]
+    )
 
-        x = 0
-        if string[i] == string[i+1]:
-            x += 1
-        print(i, x)
-        i += 1
-
-    print(string[66])
-    #x = [x for x in string]
-    #print(x)
-
-def decoe():
-    pass
-
-
-string = 'WWWWWWWWWWWWBWWWWWWWWWWWWBBBWWWWWWWWWWWWWWWWWWWWWWWWBWWWWWWWWWWWWWW'
-
-encode(string)
+def decode(compressed_string):
+    match = re.compile('(\d+)([a-zA-Z])')
+    return ''.join([int(x[0])*x[1] for x in match.findall(compressed_string)])
