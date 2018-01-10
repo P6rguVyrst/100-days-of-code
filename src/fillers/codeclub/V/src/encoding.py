@@ -8,4 +8,6 @@ def encode(string):
 
 def decode(compressed_string):
     match = re.compile('(\d+)([a-zA-Z])')
-    return ''.join([int(x[0])*x[1] for x in match.findall(compressed_string)])
+    return ''.join(
+        [int(x[0])*x[1] for x in match.findall(compressed_string)]
+    )
