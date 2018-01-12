@@ -244,5 +244,18 @@ Traceback (most recent call last):
 
 **Thoughts**: Well, managed to get run-length encoding and decoding functions pretty compact. My tests are passing, but the codeclub tests fail, and I have no idea why.
 
+### Day 37: January 11, 2018
+
+**Today's Progress**: None 
+
+**Thoughts**: missed a day. days += 1
+
+### Day 38: January 12, 2018
+
+**Today's Progress**: Moved my Design pattern learning foler to this repository. I really do need to put more effort on design...
+
+**Thoughts**: I tried and I tried, but at the end of the day I was too worn out to o anything productive.
+
+
 
 

@@ -5,6 +5,9 @@
         ./ssh_exec.py --host=alpha --command='hostname' --media='/mnt/Synology/MUSIC/sandermölder.mp3'
         ./ssh_exec.py --host=alpha --command='/home/toomas/projectx/src/redis_consumer.py' --media='/mnt/Synology/MUSIC/sandermölder.mp3'
 """
+#TODO: get rid of dependencies ie pygame
+#TODO: simplyfy
+
 from subprocess import call
 import os
 import time
