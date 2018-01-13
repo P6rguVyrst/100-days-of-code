@@ -256,6 +256,13 @@ Traceback (most recent call last):
 
 **Thoughts**: I tried and I tried, but at the end of the day I was too worn out to o anything productive.
 
+### Day 39: January 13, 2018
+
+**Today's Progress**: Moved to structural design patterns
+
+**Thoughts**: Working your way through examples is the easy way out, and prabably violates the 100daysofcode thing, but ideas are scarce.
+
+
 
 
 
