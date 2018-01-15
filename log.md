@@ -238,11 +238,13 @@ Traceback (most recent call last):
 
 **Thoughts**: Packaged watchdog feature into a console script.
 
+
 ### Day 36: January 10, 2018
 
 **Today's Progress**: RLE
 
 **Thoughts**: Well, managed to get run-length encoding and decoding functions pretty compact. My tests are passing, but the codeclub tests fail, and I have no idea why.
+
 
 ### Day 37: January 11, 2018
 
@@ -250,19 +252,33 @@ Traceback (most recent call last):
 
 **Thoughts**: missed a day. days += 1
 
+
 ### Day 38: January 12, 2018
 
 **Today's Progress**: Moved my Design pattern learning foler to this repository. I really do need to put more effort on design...
 
 **Thoughts**: I tried and I tried, but at the end of the day I was too worn out to o anything productive.
 
+
 ### Day 39: January 13, 2018
+
+**Today's Progress**: Design patterns.
+
+**Thoughts**: ... 
+
+
+### Day 40: January 14, 2018
 
 **Today's Progress**: Moved to structural design patterns
 
 **Thoughts**: Working your way through examples is the easy way out, and prabably violates the 100daysofcode thing, but ideas are scarce.
 
 
+### Day 41: January 15, 2018
+
+**Today's Progress**: Design patterns.
+
+**Thoughts**: More structural patterns. I really need an idea for an interesting pet project.
 
 
 
