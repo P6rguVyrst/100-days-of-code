@@ -281,4 +281,11 @@ Traceback (most recent call last):
 **Thoughts**: More structural patterns. I really need an idea for an interesting pet project.
 
 
+### Day 42: January 16, 2018
+
+**Today's Progress**: Played around with Trello API.
+
+**Thoughts**: I hate working with API authentication, credential management and all that shit. Should finally look into JWT as well...
+
+
 
