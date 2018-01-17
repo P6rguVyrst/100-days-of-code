@@ -288,4 +288,9 @@ Traceback (most recent call last):
 **Thoughts**: I hate working with API authentication, credential management and all that shit. Should finally look into JWT as well...
 
 
+### Day 43: January 17, 2018
+
+**Today's Progress**: Started building tolerance against my cryptonite - tests.
+
+
 
