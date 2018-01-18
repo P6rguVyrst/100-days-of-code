@@ -293,4 +293,10 @@ Traceback (most recent call last):
 **Today's Progress**: Started building tolerance against my cryptonite - tests.
 
 
+### Day 44: January 18, 2018
+
+**Today's Progress**: Building tests that fail. And pass. Sometimes.
+
+
+
 

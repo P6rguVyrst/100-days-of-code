@@ -40,17 +40,12 @@ def test_command_line_interface():
 
 ###
 
-def test_defaults():
-
-    t1 = Task()
-    t2 = Task(None, None, False, None)
-    assert t1 == t2
-
 def test_member_access():
     t = Task('buy milk', 'toomas')
     assert t.summary == 'buy milk'
     assert t.owner == 'toomas'
     assert (t.done, t.id) == (False, None)
+
 
 
 def test_asdict():
@@ -70,4 +65,14 @@ def test_replace():
     t_expected = Task('finish book', 'toomas', True, 10)
     assert t_after == t_expected
 
+def test_defaults():
 
+    t1 = Task()
+    t2 = Task(None, None, False, None)
+    assert t1 == t2
+
+def test_member_access():
+    t = Task('buy milk', 'toomas')
+    assert t.summary == 'buy milk'
+    assert t.owner == 'toomas'
+    assert (t.done, t.id) == (False, None)
