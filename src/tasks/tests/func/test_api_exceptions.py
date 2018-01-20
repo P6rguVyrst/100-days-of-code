@@ -1,5 +1,5 @@
 import pytest
-from tasks import tasks
+import tasks
 
 def test_add_raises():
     with pytest.raises(TypeError):

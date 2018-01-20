@@ -7,7 +7,7 @@ import pytest
 
 from click.testing import CliRunner
 
-from tasks.tasks import Task
+from tasks import Task
 from tasks import cli
 
 

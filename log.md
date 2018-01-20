@@ -298,5 +298,17 @@ Traceback (most recent call last):
 **Today's Progress**: Building tests that fail. And pass. Sometimes.
 
 
+### Day 45: January 19, 2018
+
+**Today's Progress**: Skipped. days += 1
+
+
+### Day 46: January 20, 2018
+
+**Today's Progress**: Finished chapter 2 of Python Testing with pytest
+
+
+
+
 
 

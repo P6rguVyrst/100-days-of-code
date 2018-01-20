@@ -1,5 +1,5 @@
 import pytest
-from tasks.tasks import Task
+from tasks import Task
 
 @pytest.mark.xfail()
 def test_task_equality():
