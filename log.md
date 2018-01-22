@@ -307,11 +307,19 @@ Traceback (most recent call last):
 
 **Today's Progress**: Finished chapter 2 of Python Testing with pytest
 
+
 ### Day 47: January 21, 2018
 
 **Today's Progress**: Finished chapter 3 of Python Testing with pytest
 
 **Thoughts**: Since I didn't have all the project functions set up, it was easier to just fetch the project code from The Web. At least this way more tests pass, though, db teardown functions still throw errors.
+
+
+### Day 48: January 22, 2018
+
+**Today's Progress**: Half way through the book.
+
+**Thoughts**: Luckily when I'm done with this one, I should have Python Tricks waiting for me in the post office, I think.
 
 
 

@@ -1,6 +1,8 @@
+import json
 import pytest
 import tasks
 from tasks import Task
+
 
 #@pytest.fixture()
 #def tasks_db(tmpdir):
@@ -52,7 +54,5 @@ def db_with_3_tasks(tasks_db, tasks_just_a_few):
 def db_with_multi_per_owner(tasks_db, tasks_mult_per_owner):
     for t in tasks_mult_per_owner:
         tasks.add(t)
-
-
 
 
