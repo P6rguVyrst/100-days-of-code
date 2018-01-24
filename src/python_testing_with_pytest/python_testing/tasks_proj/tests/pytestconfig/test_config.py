@@ -22,7 +22,7 @@ def test_pytestconfig(pytestconfig):
     print('inifile:         ', pytestconfig.inifile)
     print('invocation_dir:  ', pytestconfig.invocation_dir)
     print('rootdir:         ', pytestconfig.rootdir)
-    print('-k EXPRESSION:   '  pytestconfig.getoption('keyword'))
+    print('-k EXPRESSION:   ', pytestconfig.getoption('keyword'))
     print('-v --verbose:    ', pytestconfig.getoption('verbose'))
     print('-q --quiet:      ', pytestconfig.getoption('quiet'))
     print('-l --showlocals: ', pytestconfig.getoption('showlocals'))

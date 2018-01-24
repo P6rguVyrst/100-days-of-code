@@ -1,5 +1,6 @@
 import pytest
 import tasks
+from tasks import Task
 
 def test_add_raises():
     with pytest.raises(TypeError):
@@ -21,3 +22,14 @@ def test_list_raises():
 def test_get_raises():
     with pytest.raises(TypeError):
         tasks.get(task_id='123')
+
+@pytest.mark.usefixtures('tasks_db')
+class TestAdd():
+    def test_missing_summary(self):
+        with pytest.raises(ValueError):
+            task.add(Task(owner='bob'))
+    def test_done_not_bool(self):
+        with pytest.raises(ValueError):
+            tasks.add(Task(summary='summary', done='True'))
+
+

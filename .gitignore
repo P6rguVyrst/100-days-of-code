@@ -8,3 +8,5 @@ package-lock.json
 *.wav
 *.mp3
 *.keys
+htmlcov/
+.coverage

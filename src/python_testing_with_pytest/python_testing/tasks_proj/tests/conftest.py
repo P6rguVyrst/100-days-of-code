@@ -55,4 +55,18 @@ def db_with_multi_per_owner(tasks_db, tasks_mult_per_owner):
     for t in tasks_mult_per_owner:
         tasks.add(t)
 
+'''
+def pytest_adoption(parser):
+    group = parser.getgroup('nice')
+    group.addoption('--nice', action='store_true', help='nice: turn failures into opportunities...')
+
+def pytest_report_header():
+    if pytest.config.getoption('nice'):
+        return 'Thank you for smoking.'
+
+def pytest_report_teststatus(report):
+    if report.when == 'call':
+        if report.failed and pytest.config.getoption('nice'):
+            return (report.outcome, 'O', 'OPPORTUNITY for improvement')
+'''
 

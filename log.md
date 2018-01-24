@@ -322,6 +322,22 @@ Traceback (most recent call last):
 **Thoughts**: Luckily when I'm done with this one, I should have Python Tricks waiting for me in the post office, I think.
 
 
+### Day 49: January 23, 2018
+
+**Today's Progress**: days += 1
+
+**Thoughts**: It's a matter of choices. I did read some at Philly Joes, but didn't have enough time to log a day.
+
+
+### Day 50: January 24, 2018
+
+**Today's Progress**: One last chapter to go.
+
+**Thoughts**: There was some nice intro to packaging Python, but nothing I didn't already know. The book itself really enforces good coding practice, and I think, would be awesome for someone starting out with Python - better than codecademy for sure, in my humble opinion. If I hadn't skipped any days, I'd be half way through my challenge, alas, tomorrow I will not be able to log a day either.
+
+
+
+
 
 
 
