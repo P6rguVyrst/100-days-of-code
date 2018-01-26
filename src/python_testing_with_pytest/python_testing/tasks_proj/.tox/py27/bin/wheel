@@ -1,0 +1,11 @@
+#!/home/toomas/prog/dev/100-days-of-code/src/python_testing_with_pytest/python_testing/tasks_proj/.tox/py27/bin/python2.7
+
+# -*- coding: utf-8 -*-
+import re
+import sys
+
+from wheel.tool import main
+
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw?|\.exe)?$', '', sys.argv[0])
+    sys.exit(main())

@@ -336,6 +336,23 @@ Traceback (most recent call last):
 **Thoughts**: There was some nice intro to packaging Python, but nothing I didn't already know. The book itself really enforces good coding practice, and I think, would be awesome for someone starting out with Python - better than codecademy for sure, in my humble opinion. If I hadn't skipped any days, I'd be half way through my challenge, alas, tomorrow I will not be able to log a day either.
 
 
+### Day 51: January 25, 2018
+
+**Today's Progress**: days += 1
+
+**Thoughts**: Estonian Music Awards
+
+
+### Day 52: January 26, 2018
+
+**Today's Progress**: Finished "Python Testing with pytest". 
+
+**Thoughts**: ~3 hours of sleep, productive day at work, coding challenge and the night's still young. After just reading about tox, It sounds like something I might want to use for CD.
+
+
+
+
+
 
 
 
