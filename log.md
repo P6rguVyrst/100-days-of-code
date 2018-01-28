@@ -350,6 +350,22 @@ Traceback (most recent call last):
 **Thoughts**: ~3 hours of sleep, productive day at work, coding challenge and the night's still young. After just reading about tox, It sounds like something I might want to use for CD.
 
 
+### Day 53: January 27, 2018
+
+**Today's Progress**: days += 1 
+
+**Thoughts**: Went to gym and ran out of time to code :( On my way to company "christmas party" grabbed my copy of Dan Bader's "Python Tricks" from the post office.
+
+
+### Day 54: January 28, 2018
+
+**Today's Progress**: Started reading Dan bader's "Python Tricks". Finished first 2 chapters so far.
+
+**Thoughts**: Went to gym and ran out of time to code :( Went to post office to get my copy of Dan Bader's "Python Tricks".
+
+
+
+
 
 
 
