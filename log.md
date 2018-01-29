@@ -364,6 +364,13 @@ Traceback (most recent call last):
 **Thoughts**: Went to gym and ran out of time to code :( Went to post office to get my copy of Dan Bader's "Python Tricks".
 
 
+### Day 55: January 29, 2018
+
+**Today's Progress**: Well, started a project that should keep me busy for a long, long time.
+
+**Thoughts**: from earth.animalia.chordata.mammalia.primates.haplorhini.simiiformes.hominidae.homo import sapiens as homo_sapiens - see the potential here?
+
+
 
 
 
