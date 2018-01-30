@@ -371,6 +371,12 @@ Traceback (most recent call last):
 **Thoughts**: from earth.animalia.chordata.mammalia.primates.haplorhini.simiiformes.hominidae.homo import sapiens as homo_sapiens - see the potential here?
 
 
+### Day 56: January 30, 2018
+
+**Today's Progress**: 1/3 of Python tricks read
+
+**Thoughts**: Although today is a busy day, since last week I skipped to many days, I can't afford to skip days. Even when it's the re-opening of my fav jazz club.
+
 
 
 
