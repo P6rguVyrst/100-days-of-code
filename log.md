@@ -378,7 +378,7 @@ Traceback (most recent call last):
 **Thoughts**: Although today is a busy day, since last week I skipped to many days, I can't afford to skip days. Even when it's the re-opening of my fav jazz club.
 
 
-### Day 56: January 31, 2018
+### Day 57: January 31, 2018
 
 **Today's Progress**: Almost half through the book. Python Tricks.
 
