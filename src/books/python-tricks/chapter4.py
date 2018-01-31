@@ -1,4 +1,7 @@
+from exceptions import (
+    BaseValidationError,
 
+)
 
 class Car:
     def __init__(self, color, milage):
@@ -16,4 +19,11 @@ c = Car('blue', 123)
 print(c)
 print(repr(c))
 
+def validate(name):
+    if len(name) < 10:
+        raise NameTooShortError
 
+try:
+    print(validate('Toomas'))
+except BaseValidationError as e:
+    print(e)
