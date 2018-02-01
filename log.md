@@ -385,6 +385,15 @@ Traceback (most recent call last):
 **Thoughts**: Picking up tricks..
 
 
+### Day 58: February 1, 2018
+
+**Today's Progress**: Didn't feel like reading today. Worked on my endless project.
+
+**Thoughts**: On a project this scale you really start to think about design patterns and effective use of data structures. Neither of which reflects on my current code base.
+
+
+
+
 
 
 
