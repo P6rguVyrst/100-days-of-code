@@ -392,6 +392,12 @@ Traceback (most recent call last):
 **Thoughts**: On a project this scale you really start to think about design patterns and effective use of data structures. Neither of which reflects on my current code base.
 
 
+### Day 58: February 2, 2018
+
+**Today's Progress**: 2/3 of Python Tricks. 
+
+**Thoughts**: Thought about doing more coding on world_project but it seemed overwhelming at the moment.
+
 
 
 
