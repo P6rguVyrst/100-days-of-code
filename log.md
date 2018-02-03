@@ -399,6 +399,15 @@ Traceback (most recent call last):
 **Thoughts**: Thought about doing more coding on world_project but it seemed overwhelming at the moment.
 
 
+### Day 58: February 3, 2018
+
+**Today's Progress**: Packaging monitoring tools into single Python namespace.
+
+**Thoughts**: Found some Twitter keyword monitoring code, that works in my Zabbix server curreny to monitor specified keywords. Thought it would be nice to package some monitoring tools into single Python monitoring namespace.
+
+
+
+
 
 
 
