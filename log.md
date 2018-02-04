@@ -406,14 +406,11 @@ Traceback (most recent call last):
 **Thoughts**: Found some Twitter keyword monitoring code, that works in my Zabbix server curreny to monitor specified keywords. Thought it would be nice to package some monitoring tools into single Python monitoring namespace.
 
 
+### Day 59: February 4, 2018
 
+**Today's Progress**: Worked out some bugs on Twitter keyword monitor and got a MVP out. Might add more functionality to it later. Read some more Python Tricks.
 
-
-
-
-
-
-
+**Thoughts**: Almost forgot to log the hours today. I should really move some other monitoring tools that are in #100daysofcode repo to my pymon-tools repository.
 
 
 
