@@ -412,6 +412,31 @@ Traceback (most recent call last):
 
 **Thoughts**: Almost forgot to log the hours today. I should really move some other monitoring tools that are in #100daysofcode repo to my pymon-tools repository.
 
+###########################################
+
+
+### Day 60: February 5, 2018
+
+**Today's Progress**: Reading Python Tricks.
+
+**Thoughts**: Did the commit, but forgot to fill in the log.
+
+
+### Day 61: February 6, 2018
+
+**Today's Progress**: days += 1
+
+**Thoughts**: Did some work on pymon-tools repo while sitting in a bar, but not enough to log an hour.
+
+
+### Day 60: February 7, 2018
+
+**Today's Progress**: Worked on pymon-tools. Structuring and moved dirmon to monitoring namespace. Finished chapter6 of Python Tricks.
+
+
+
+
+
 
 
 

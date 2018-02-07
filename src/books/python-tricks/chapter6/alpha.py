@@ -54,4 +54,24 @@ for item in repeater:
     print(item)
 
 
+# Generators and Generator expressions
+
+def repeater(value):
+    while True:
+        sleep(1)
+        yield value
+
+def bounded_repeater(value, max_repeats):
+    for v in range(max_repeats):
+        yield value
+
+for i in bounded_repeater('lsd', 3):
+    print(i)
+
+iterator = ('hi' for i in range(3))
+for i in iterator:
+    print(i)
+#for i in repeater('heh'):
+#    print(i)
+
 
