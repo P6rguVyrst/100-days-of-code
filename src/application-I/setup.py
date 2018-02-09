@@ -1,7 +1,8 @@
 from setuptools import setup, find_packages
 
 requirements = [
-    'requests'
+    'requests',
+    'Click>=6.0',
 ]
 test_requirements = [
     'pytest',
@@ -19,7 +20,13 @@ setup(
     url='',
     author='Toomas Ormisson',
     author_email='toomas.ormisson@gmail.com',
-    packages=find_packages(include=['project']),
+    packages=['project', 'project.scrapers'],#find_packages(include=['project']),
+    entry_points={
+        'console_scripts': [
+            'fs_discovery=project.scrapers.fs_poller:main',
+        ]
+    },
+
     include_package_data=True,
     install_requires=requirements,
     license='MIT',

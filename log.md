@@ -429,9 +429,21 @@ Traceback (most recent call last):
 **Thoughts**: Did some work on pymon-tools repo while sitting in a bar, but not enough to log an hour.
 
 
-### Day 60: February 7, 2018
+### Day 62: February 7, 2018
 
 **Today's Progress**: Worked on pymon-tools. Structuring and moved dirmon to monitoring namespace. Finished chapter6 of Python Tricks.
+
+
+### Day 63: February 8, 2018
+
+**Today's Progress**: days += 1
+
+
+### Day 64: February 9, 2018
+
+**Today's Progress**: Finished Python Tricks. Really awesome book.
+
+**Thoughts**: When I look at the code I wrote when the challenge started, I see how un-Pythonic it is. Without mentors, the way of natural evolution, learning is slow and painful. Organic growth.
 
 
 
