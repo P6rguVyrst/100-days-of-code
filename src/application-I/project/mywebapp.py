@@ -64,14 +64,6 @@ def parse_request(data):
     return return_message
 
 
-@app.route('/', methods=['GET'])
-def hello():
-    #with open('project/test_data.json', 'r') as f:
-    #    data = f.read()
-    #table = json2html.convert(data)
-    #return table
-    return render_template('index.html')
-
 
 if __name__ == '__main__':
     app.run(

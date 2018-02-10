@@ -446,6 +446,11 @@ Traceback (most recent call last):
 **Thoughts**: When I look at the code I wrote when the challenge started, I see how un-Pythonic it is. Without mentors, the way of natural evolution, learning is slow and painful. Organic growth.
 
 
+### Day 65: February 10, 2018
+
+**Today's Progress**: Read an article about mocking external APIs, and didn't quite like all the provided exaples. Pytest assertions are just so much more elegant than nose equivalents.
+
+**Thoughts**: It's more difficult getting stuff done while travelling.
 
 
 
