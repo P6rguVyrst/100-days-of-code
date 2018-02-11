@@ -10,4 +10,13 @@ def get_todos():
     if response.ok:
         return response
 
+def get_uncompleted_todos(todos):
+    resp = get_todos()
+    print(resp)
+    if not resp:
+        return []
+    else:
+        todos = resp.json()
+        return [todo for todo in todos if todo.get('completed' == False)]
+
 

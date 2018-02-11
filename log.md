@@ -453,6 +453,12 @@ Traceback (most recent call last):
 **Thoughts**: It's more difficult getting stuff done while travelling.
 
 
+### Day 66: February 11, 2018
+
+**Today's Progress**: Worked with the second part of Real Python API testing article. Building an HTTP server was really interesting and gave some good insight.
+
+
+
 
 
 

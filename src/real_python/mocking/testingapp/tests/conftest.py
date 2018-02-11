@@ -1,7 +1,8 @@
+import pytest
 
-
+@pytest.fixture(scope='session')
 def todos_api_response():
-    todos = [
+    return [
         {
             'userId': 11,
             'id': 1,
