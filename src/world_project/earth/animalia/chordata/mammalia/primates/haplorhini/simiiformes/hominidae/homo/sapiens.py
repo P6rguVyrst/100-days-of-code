@@ -87,10 +87,10 @@ class Systems(
     ImmuneSystem,
     IntegumentarySystem,
     LymphaticSystem,
-    MusculoskeletalSystem,
-    NervousSystem,
+    #MusculoskeletalSystem,
+    #NervousSystem,
     #ReproductiveSystem,
-    #RespiratorySystem,
+    RespiratorySystem,
     #UrinarySystem,
     # LIMITS TO INHERITANCE?
     #TypeError: multiple bases have instance lay-out conflict

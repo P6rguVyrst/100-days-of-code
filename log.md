@@ -458,6 +458,18 @@ Traceback (most recent call last):
 **Today's Progress**: Worked with the second part of Real Python API testing article. Building an HTTP server was really interesting and gave some good insight.
 
 
+### Day 67: February 12, 2018
+
+**Today's Progress**: days += 1
+
+
+### Day 68: February 13, 2018
+
+**Today's Progress**: After a trip to London resurrected old piece of Google maps API communication code to make my next trips more efficient.
+
+**Thoughts**: A difficult day to find ideas and time to concentrate.
+
+
 
 
 
