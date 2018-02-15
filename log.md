@@ -470,6 +470,21 @@ Traceback (most recent call last):
 **Thoughts**: A difficult day to find ideas and time to concentrate.
 
 
+### Day 69: February 14, 2018
+
+**Today's Progress**: Days += 1
+
+**Thoughts**: Valentine's day
+
+
+### Day 70: February 15, 2018
+
+**Today's Progress**: Worked on city tour planning code. 
+
+**Thoughts**: Minimum time goal achieved.
+
+
+
 
 
 

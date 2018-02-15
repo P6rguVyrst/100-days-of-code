@@ -6,6 +6,7 @@
 from itertools import combinations
 import click
 import googlemaps
+from pprint import pprint as pp
 
 
 @click.command()
@@ -26,11 +27,22 @@ def main(locations, key):
             language='English',
             units='metric'
         )
-        distance = route["rows"][0]["elements"][0]["distance"]["value"]
-        duration = route["rows"][0]["elements"][0]["duration"]["value"]
-        waypoint_distances[frozenset([waypoint1, waypoint2])] = distance
-        waypoint_durations[frozenset([waypoint1, waypoint2])] = duration
+        distance = route.get("rows", {})[0].get("elements", {})[0].get("distance", {}).get("value")
+        duration = route.get("rows", {})[0].get("elements", {})[0].get("duration", {}).get("value")
+        if duration:
+            waypoint_distances[frozenset([waypoint1, waypoint2])] = distance
+            waypoint_durations[frozenset([waypoint1, waypoint2])] = duration
 
+    for (waypoint1, waypoint2) in waypoint_distances.keys():
+        data = {
+            'from': waypoint1,
+            'to': waypoint2,
+            'distance': waypoint_distances[frozenset([waypoint1, waypoint2])],
+        }
+        pp(data)
+
+    #pp(waypoint_distances)
+    #pp(waypoint_durations)
 
 
 
