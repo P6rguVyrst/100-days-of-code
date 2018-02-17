@@ -484,6 +484,17 @@ Traceback (most recent call last):
 **Thoughts**: Minimum time goal achieved.
 
 
+### Day 71: February 16, 2018
+
+**Today's Progress**: days += 1
+
+
+### Day 72: February 17, 2018
+
+**Today's Progress**: Started reading "Python Machine Learning". Started adding Redis suppport for monitoring tools namespace - currently just dirmon.
+
+
+
 
 
 
