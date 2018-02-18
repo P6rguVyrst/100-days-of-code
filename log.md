@@ -494,11 +494,11 @@ Traceback (most recent call last):
 **Today's Progress**: Started reading "Python Machine Learning". Started adding Redis suppport for monitoring tools namespace - currently just dirmon.
 
 
+### Day 73: February 18, 2018
 
+**Today's Progress**: Another go at python-sonic.
 
-
-
-
+**Thoughts**: Its terrible working with seemingly dead unstructured code.
 
 
 
