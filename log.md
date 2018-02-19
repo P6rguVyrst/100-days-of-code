@@ -501,5 +501,13 @@ Traceback (most recent call last):
 **Thoughts**: Its terrible working with seemingly dead unstructured code.
 
 
+### Day 74: February 19, 2018
+
+**Today's Progress**: Reading up on machine learning.
+
+**Thoughts**: It feels like Pythonistas in data science sure seem to love Windows...
+
+
+
 
 

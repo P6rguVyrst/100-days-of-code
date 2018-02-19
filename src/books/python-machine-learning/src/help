@@ -1,0 +1,20 @@
+>>> from petals import *
+>>> from perceptron import Perceptron
+>>> ppn = Perceptron(eta=0.01, n_iter=10)
+>>> ppn.fit(X, y)
+<perceptron.Perceptron object at 0x7fb18f1f22e8>
+>>> plot_decision_regions(X, y, classifier=ppn)
+>>> plt.plot(range(1, len(ppn.errors_) + 1), ppn.errors_, marker='o')
+[<matplotlib.lines.Line2D object at 0x7fb1866106a0>]
+>>> plt.xlabel('Epochs')
+Text(0.5,0,'Epochs')
+>>> plt.ylabel('Number of updates')
+Text(0,0.5,'Number of updates')
+>>> plt.xlabel('sepal length [cm]')
+Text(0.5,0,'sepal length [cm]')
+>>> plt.ylabel('petal length [cm]')
+Text(0,0.5,'petal length [cm]')
+>>> plt.legend(loc='upper left')
+<matplotlib.legend.Legend object at 0x7fb16c0d3898>
+>>> plt.show()
+
