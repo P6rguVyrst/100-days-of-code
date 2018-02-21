@@ -508,6 +508,19 @@ Traceback (most recent call last):
 **Thoughts**: It feels like Pythonistas in data science sure seem to love Windows...
 
 
+### Day 75: February 20, 2018
+
+**Today's Progress**: days += 1
+
+
+### Day 76: February 21, 2018
+
+**Today's Progress**: Worked on python-sonic, read "Python Machine Learning", started 1/3 books of API series about OAuth 2.0
+
+
+
+
+
 
 
 
