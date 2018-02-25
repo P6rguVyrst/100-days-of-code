@@ -518,9 +518,26 @@ Traceback (most recent call last):
 **Today's Progress**: Worked on python-sonic, read "Python Machine Learning", started 1/3 books of API series about OAuth 2.0
 
 
+### Day 77: February 22, 2018
+
+**Today's Progress**: Days += 1
 
 
+### Day 78: February 23, 2018
+
+**Today's Progress**: Worked on Sonic Pi.
+ 
+**Thoughts**: How to eat an elephant? One bite at a time. Down from 958 lines of #Python code to 158 in main file. It's getting easier to comprehend the whole code base. Played around with usage samples, and all but "sample" function seem to play sounds - need to debug that.
 
 
+### Day 79: February 24, 2018
+
+**Today's Progress**: Days += 1
+
+**Thoughts**: Didn't get to work an hour. Contacted author of python-sonic about changes I've implemented in my branch of the project. Fixed the bug I had.
+
+### Day 80: February 25, 2018
+
+**Today's Progress**: Basically just read... Almost half way through API architecture book. Has more value for me than the OAuth2 book.
 
 
