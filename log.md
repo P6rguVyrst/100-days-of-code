@@ -540,4 +540,8 @@ Traceback (most recent call last):
 
 **Today's Progress**: Basically just read... Almost half way through API architecture book. Has more value for me than the OAuth2 book.
 
+### Day 81: February 26, 2018
+
+**Today's Progress**: Worked on #python-sonic a little. Second ever PR to an #opensource project. Read a little - half way through API Architecture. 
+
 
