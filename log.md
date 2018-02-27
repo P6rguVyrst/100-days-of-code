@@ -545,3 +545,10 @@ Traceback (most recent call last):
 **Today's Progress**: Worked on #python-sonic a little. Second ever PR to an #opensource project. Read a little - half way through API Architecture. 
 
 
+### Day 82: February 27, 2018
+
+**Today's Progress**: Worked on #Python #Codeclub excericises, focused rather on #testing the functions than solving the exericiseis themselves.
+
+**Thoughts**: New season at Codeclub.
+
+
