@@ -62,7 +62,7 @@ class ATM(Whidraw):
                  thundreds=25, fhundreds=10):
 
         # assert int for bills
-        bills = self.catch_counterfit({
+        bills = self._catch_counterfit({
             5: fives,
             10: tens,
             20: twenties,
@@ -75,7 +75,7 @@ class ATM(Whidraw):
         self.balance = sum([k*v for k,v in bills.items()])
 
     #TODO: simplify, make more easily testable
-    def catch_counterfit(self, bills):
+    def _catch_counterfit(self, bills):
         for k, v in bills.items():
             try:
                 if int(v) < 0:
@@ -90,8 +90,7 @@ class ATM(Whidraw):
     def bills_left(self):
         return self.b
 
-    def bills(self): pass
-
+    #def bills(self): pass
 
     def whidraw(self, money):
         """
@@ -113,5 +112,5 @@ class ATM(Whidraw):
 
     def deposit(self, bills):
         assert isinstance(bills, dict)
-        self.catch_counterfit(bills)
+        self._catch_counterfit(bills)
 

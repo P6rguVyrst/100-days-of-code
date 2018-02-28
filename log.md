@@ -552,3 +552,9 @@ Traceback (most recent call last):
 **Thoughts**: New season at Codeclub.
 
 
+### Day 83: February 28, 2018
+
+**Today's Progress**: Read "API Architecture". 
+
+
+
