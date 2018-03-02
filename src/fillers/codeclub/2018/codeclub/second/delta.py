@@ -1,8 +1,7 @@
 import inspect
-
+import sys
 
 class Whidraw(object):
-
 
     def count_bills(self, whidraw_ammount):
         whidraw_bills = {
@@ -55,6 +54,7 @@ class Whidraw(object):
 
         return whidraw_bills
 
+
 class ATM(Whidraw):
 
     def __init__(self, fives=1000, tens=500, twenties=250,
@@ -80,7 +80,9 @@ class ATM(Whidraw):
             try:
                 if int(v) < 0:
                     bills[k]=0
-            except ValueError:
+                if not isinstance(v, int):
+                    bills[k]=0
+            except Exception:
                 bills[k]=0
         return bills
 
@@ -103,7 +105,9 @@ class ATM(Whidraw):
         If user requests 750, then the ATM should return
         1x 500 and 1x200, 2x20 and 2x5
         """
-        assert isinstance(money, int)
+        # replaced assert because assertions can be turned off.
+        if not isinstance(money, int):
+            raise ValueError
         payout = self.whidraw_sum(money)
 
         return payout

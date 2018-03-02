@@ -557,4 +557,14 @@ Traceback (most recent call last):
 **Today's Progress**: Read "API Architecture". 
 
 
+### Day 84: March 1, 2018
+
+**Today's Progress**: Days += 1 
+
+
+### Day 85: March 2, 2018
+
+**Today's Progress**: Finished API architecture. Wrote some failing tests that describe the desired functionality. 
+
+
 
