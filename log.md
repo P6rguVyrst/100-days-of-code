@@ -567,4 +567,15 @@ Traceback (most recent call last):
 **Today's Progress**: Finished API architecture. Wrote some failing tests that describe the desired functionality. 
 
 
+### Day 86: March 3, 2018
+
+**Today's Progress**: Days += 1 
+
+
+### Day 87: March 4, 2018
+
+**Today's Progress**: Responded to sonic-py PR issues and worked them out.
+
+
+
 
