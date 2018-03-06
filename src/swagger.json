@@ -1,0 +1,88 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "description": "",
+        "version": "0.1.0",
+        "title": "Testing code generation using Swagger 2.0",
+        "termsOfService": "",
+        "contact": {
+            "email": "tomas.ormisson@gmail.com"
+        },
+        "licence": {
+            "name": "",
+            "utl": ""
+        }
+    },
+    "host": "",
+    "basepath": "/v1",
+    "tags": [
+    
+    ],
+    "schemes": [
+        "http"
+    ],
+    "paths": {
+        "/offers": {
+            "get": {
+                "tags": [],
+                "summary": "",
+                "description": "",
+                "operationId": "get_offer",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "in": "body",
+                        "name": "body",
+                        "description": "",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/Offer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "400": {
+                        "description": "Invalid request"
+                    }
+                },
+                "security": [
+                    {
+                        "tokenapi": [
+                            "write:offers",
+                            "read:offers"
+                        ]
+                    }
+                ]
+
+            }
+        }
+    },
+    "securityDefinitions": {
+        "tokenapi": {
+        
+        }
+    },
+    "definitions": {
+        "Offer": {
+            "type": "object",
+            "required": [
+                "name"
+            ],
+            "properties": {
+                "name": {
+                    "type": "string",
+                    "example": "Toomas"
+                }     
+            }
+        }
+    },
+    "externalDocs": {
+        "description": "",
+        "url": "https://www.google.com"
+    }
+}
