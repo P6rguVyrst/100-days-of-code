@@ -11,7 +11,7 @@
         "licence": {
             "name": "",
             "utl": ""
-        },
+        }
     },
     "host": "",
     "basepath": "/v1",
