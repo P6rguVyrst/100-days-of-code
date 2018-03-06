@@ -15,22 +15,25 @@ def test_atm_init(atm):
         assert key*value == 0
 
 def test_whidraw1(atm):
-    whidraw = atm.whidraw_sum(500)
+    bills = atm.b
+    whidraw = atm.whidraw_sum(500, bills)
     print(whidraw)
 
 def test_whidraw_500(atm):
     bills = atm.b
-    whidraw = atm.whidraw_sum(500)
+    whidraw = atm.whidraw_sum(500, bills)
     assert whidraw[200] == 2
     assert whidraw[50] == 2
 
 def test_whidraw_100(atm):
-    whidraw = atm.whidraw_sum(100)
+    bills = atm.b
+    whidraw = atm.whidraw_sum(100, bills)
     print(whidraw)
     assert whidraw[50] == 2
 
 def test_whidraw_750(atm):
-    whidraw = atm.whidraw_sum(750)
+    bills = atm.b
+    whidraw = atm.whidraw_sum(750, bills)
     print(whidraw)
     assert whidraw[500] == 1
     assert whidraw[200] == 1

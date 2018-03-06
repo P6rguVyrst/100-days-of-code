@@ -14,7 +14,7 @@ class Whidraw(object):
             500: 0
         }
 
-    def whidraw_sum(self, money):
+    def whidraw_sum(self, money, bills):
         whidraw_bills = {
             5: 0,
             10: 0,
@@ -108,11 +108,9 @@ class ATM(Whidraw):
         # replaced assert because assertions can be turned off.
         if not isinstance(money, int):
             raise ValueError
-        payout = self.whidraw_sum(money)
+        payout = self.whidraw_sum(money, self.b)
 
         return payout
-
-
 
     def deposit(self, bills):
         assert isinstance(bills, dict)
