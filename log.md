@@ -576,6 +576,21 @@ Traceback (most recent call last):
 
 **Today's Progress**: Responded to sonic-py PR issues and worked them out.
 
+### Day 87: March 5, 2018
+
+**Today's Progress**: Days += 1
+
+### Day 87: March 6, 2018
+
+**Today's Progress**: Pub-coding. Got inspired reading kubernetes python client. Wrote Swagger documentation and generated an API from it.
+
+### Day 87: March 7, 2018
+
+**Today's Progress**: Days += 1
+
+### Day 87: March 8, 2018
+
+**Today's Progress**: Codeclub fillers and requests-html. Scraping web for humans.
 
 
 
