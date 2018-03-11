@@ -576,21 +576,42 @@ Traceback (most recent call last):
 
 **Today's Progress**: Responded to sonic-py PR issues and worked them out.
 
-### Day 87: March 5, 2018
+
+### Day 88: March 5, 2018
 
 **Today's Progress**: Days += 1
 
-### Day 87: March 6, 2018
+
+### Day 89: March 6, 2018
 
 **Today's Progress**: Pub-coding. Got inspired reading kubernetes python client. Wrote Swagger documentation and generated an API from it.
 
-### Day 87: March 7, 2018
+
+### Day 90: March 7, 2018
 
 **Today's Progress**: Days += 1
 
-### Day 87: March 8, 2018
+
+### Day 91: March 8, 2018
 
 **Today's Progress**: Codeclub fillers and requests-html. Scraping web for humans.
+
+
+### Day 92: March 9, 2018
+
+**Today's Progress**: Tried adding new features to pyzabbix. My dev branch of pyzabbix. Tests, new feature concept, raised an issue to get feedback on the idea. 
+
+
+### Day 93: March 10, 2018
+
+**Today's Progress**: Ansible roles to setup my new lightweight web server.
+
+
+### Day 94: March 11, 2018
+
+**Today's Progress**: Working with verypythonproblems.com
+
+**Thoughts**: Most of the time was getting to know Django and how to configure it to work with Nginx. No coding, just configuration.
 
 
 
