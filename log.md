@@ -614,4 +614,12 @@ Traceback (most recent call last):
 **Thoughts**: Most of the time was getting to know Django and how to configure it to work with Nginx. No coding, just configuration.
 
 
+### Day 95: March 12, 2018
+
+**Today's Progress**: Working with verypythonproblems.com
+
+**Thoughts**: Finally got the configuration more or less right. Now I can work on getting the API set up.
+
+
+
 
