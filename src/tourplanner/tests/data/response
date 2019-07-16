@@ -1,7 +1,0 @@
-{'destination_addresses': ['Telliskivi 60a, 10412 Tallinn, Estonia'],
- 'origin_addresses': ['Pikk 19, 10133 Tallinn, Estonia'],
- 'rows': [{'elements': [{'distance': {'text': '1.2 km', 'value': 1218},
-                         'duration': {'text': '15 mins', 'value': 881},
-                         'status': 'OK'}]}],
- 'status': 'OK'}
-

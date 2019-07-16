@@ -1,7 +1,0 @@
-{
-  "tests/test_first_delta.py::test_parse_name": true,
-  "tests/test_second_delta.py::test_whidraw": true,
-  "tests/test_second_delta.py::test_whidraw_100": true,
-  "tests/test_second_delta.py::test_whidraw_500": true,
-  "tests/test_second_delta.py::test_whidraw_750": true
-}
