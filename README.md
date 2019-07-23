@@ -24,7 +24,7 @@ Started working on FPL Prometheus Exporter.
 | 20.07.2019 |  5  |             |          |
 | 21.07.2019 |  x  |             |          |
 | 22.07.2019 |  6  |             |          |
-| 23.07.2019 |  7  | Project II  |          |
+| 23.07.2019 |  7  | Project II  | First ever public pypi release: https://pypi.org/project/fpl-exporter/ |
 | 24.07.2019 |    |             |          |
 | 25.07.2019 |    |             |          |
 | 26.07.2019 |    |             |          |
