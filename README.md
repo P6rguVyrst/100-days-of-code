@@ -17,17 +17,17 @@ Started working on FPL Prometheus Exporter.
 
 | Date       | Day | Project     | Progress |
 |------------|-----|-------------|----------|
-| 16.07.2019 |  1  | Project I   |          |
-| 17.07.2019 |  2  |             |          |
-| 18.07.2019 |  3  |             |          |
-| 19.07.2019 |  4  |             |          |
-| 20.07.2019 |  5  |             |          |
-| 21.07.2019 |  x  |             |          |
-| 22.07.2019 |  6  |             |          |
-| 23.07.2019 |  7  | Project II  | First ever public pypi release: https://pypi.org/project/fpl-exporter/ |
-| 24.07.2019 |    |             |          |
-| 25.07.2019 |    |             |          |
-| 26.07.2019 |    |             |          |
+| 16.07.2019 |  1  | Project I   |   |
+| 17.07.2019 |  2  |             |   |
+| 18.07.2019 |  3  |             |   |
+| 19.07.2019 |  4  |             |   |
+| 20.07.2019 |  5  |             |   |
+| 21.07.2019 |  x  |             |   |
+| 22.07.2019 |  6  |             |  First ever public pypi release: https://pypi.org/project/fpl-exporter/  |
+| 23.07.2019 |  7  | Project II  |  |
+| 24.07.2019 |    |             |   |
+| 25.07.2019 |    |             |   |
+| 26.07.2019 |    |             |   |
 
 
 
